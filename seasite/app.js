@@ -1,6 +1,7 @@
 var i;
 var x = document.getElementsByClassName("image");
-const image = ["url('5.jpg')", "url('6.jpg')", "url('8.jpg')", "url('10.jpg')"];
+const image = ["url('5.jpg')",
+ "url('6.jpg')", "url('8.jpg')", "url('10.jpg')", "url('7.jpg')"];
 for (i = 0; i < x.length; i++) {
   x[i].style.backgroundImage = image[i];
 }
@@ -47,3 +48,14 @@ hamburger.addEventListener("click", () => {
     flag = true;
   }
 });
+
+const icon = document.querySelector(".icon");
+const search = document.querySelector(".search");
+const span = document.querySelector(".clear");
+const searchInput = document.getElementById("mySearch");
+icon.onclick = () => {
+  search.classList.toggle("jojo");
+  span.classList.toggle("active");
+}
+
+span.onclick = () => {searchInput.value = ''}

@@ -21,11 +21,19 @@
   <header id="header">
     <div class="logo">Seasite</div>
     <div class="menu_content" id="menu">
-      <input class="search" type="search" placeholder="Search"/>
       <ul>
+        <li>
+          <div class="search">
+            <div class="icon"></div>
+            <div class="input">
+              <input type="text" placeholder="Search" id="mySearch">
+              <span class="clear"></span>
+            </div>
+          </div>
+        </li>
         <li><a href="#">Home</a></li>
         <li><a href="#about">About us</a></li>
-        <li><a href="#" class="cta">Contact</a></li>
+        <li><a href="#contact" class="cta">Contact</a></li>
       </ul>
     </div>
     <button id="button-menu" class="hamburger" aria-label="menu">
@@ -111,6 +119,30 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
       <div class="image"></div>
+    </div>
+  </section>
+  <section id="form">
+    <fieldset class="form__box">
+      <a name="contact"></a>
+      <legend class="form__header">Contact</legend>
+      <label>Any problem with our service? Send us a feedback</label>
+      <input type="text" list="how" placeholder="How did you find us?">
+      <datalist id="how">
+        <option value="Tv"></option>
+        <option value="Instagram"></option>
+        <option value="Facebook"></option>
+        <option value="Yotube Ads"></option>
+        <option value="By friends"></option>
+      </datalist>
+
+      <input type="text" placeholder="Email">
+      <input type="text" placeholder="Cell number">
+      <input type="text" placeholder="Surname and First name">
+      <textarea name="message" rows="8" cols="80" placeholder="Write your message"></textarea>
+    </fieldset>
+    <div class="reminder">
+      <p>Remember: enjoy your vacation and take a sunbath!</p>
+      <span style="font-size: 100px;"> &#128262	&#128526 </span>
     </div>
   </section>
   <footer>
